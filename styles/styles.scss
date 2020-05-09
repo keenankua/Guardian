@@ -1,0 +1,57 @@
+$colours: (
+  primary-background: #393e41,
+  secondary-background: #2d3235,
+  primary-text: #ffffff,
+  accent: #e7bb41,
+);
+
+$fonts: (
+  primary: (
+    "Alfa Slab One",
+    cursive,
+  ),
+  secondary: (
+    "Anton",
+    sans-serif,
+  ),
+);
+
+@import "./_landing";
+@import "./_overview";
+@import "./_contact";
+@import "./_effects";
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  background: map-get($colours, primary-background);
+  font-family: map-get($fonts, primary);
+  color: map-get($colours, primary-text);
+}
+
+section {
+  min-height: 100vh;
+}
+
+:root {
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    font-size: 18px;
+  }
+}

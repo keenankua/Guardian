@@ -1,0 +1,149 @@
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .contact-main {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+
+    .contact-text {
+      width: 90%;
+      margin: 0 auto;
+      font-size: 1.5rem;
+      color: map-get($colours, accent);
+      white-space: pre-line;
+
+      span {
+        font-family: map-get($fonts, secondary);
+        color: map-get($colours, primary-text);
+      }
+    }
+
+    .contact-form {
+      background: map-get($colours, secondary-background);
+      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      padding: 2rem;
+      margin-top: 1rem;
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .form-item {
+        width: 100%;
+
+        label {
+          font-size: 1.125rem;
+          font-family: map-get($fonts, secondary);
+          color: map-get($colours, accent);
+        }
+
+        input,
+        textarea {
+          font-size: 1rem;
+          width: 100%;
+          border: none;
+          padding: 0.5em;
+          font-family: map-get($fonts, secondary);
+        }
+      }
+
+      .form-item:not(:last-child) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+.form-button {
+  font-size: 0.875rem;
+  color: map-get($colours, secondary-background);
+  background: map-get($colours, accent);
+  text-decoration: none;
+  padding: 0.6em 0.85em;
+}
+
+@media (min-width: 480px) {
+  #contact {
+    .contact-main {
+      .contact-text {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #contact {
+    .contact-main {
+      width: 70%;
+
+      .contact-form {
+        .form-item {
+          label {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #contact {
+    .contact-main {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 95%;
+
+      .contact-text {
+        margin: 0;
+        width: 40%;
+      }
+
+      .contact-form {
+        margin-top: 0;
+        width: 40%;
+        padding: 2.5rem;
+
+        .form-item:not(:last-child) {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+  .form-button {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  #contact {
+    .contact-main {
+      .contact-text {
+        font-size: 2.5rem;
+      }
+
+      .contact-form {
+        .form-item {
+          label {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  #contact {
+    .contact-main {
+      width: 85%;
+    }
+  }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Guardian</title>
+</head>
+
+<body>
+
+    <section id="landing">
+        <div class="bg"></div>
+        <a href="" class="landing-nav">
+            <img src="./images/icon.svg" alt="">
+            <span>Guardian</span>
+        </a>
+        <div class="landing-main">
+            <div class="landing-text">Protect yourself.
+                Protect your devices.</div>
+            <a href="#" class="landing-button landing-hvr-sweep-to-right">Download now</a>
+        </div>
+    </section>
+
+    <section id="overview">
+        <div class="overview-main">
+            <div class="overview-text"><span>Guardian</span> is the bodyguard for all your devices.</div>
+            <img src="./images/bodyguard.svg" alt="Bodyguard" class="overview-img">
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-main">
+            <div class="contact-text">Questions?
+                Concerns?
+                Feedback?
+                <span>We'd love to hear from you!</span></div>
+            <form class="contact-form">
+                <div class="form-item">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" required>
+                </div>
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" required>
+                </div>
+                <div class="form-item">
+                    <label for="comment">Comment</label>
+                    <textarea name="comment" rows="10" required></textarea>
+                </div>
+                <a href="#" class="form-button contact-hvr-sweep-to-right">Submit</a>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        const sr = ScrollReveal({ viewOffset: { top: 65 } });
+        sr.reveal('.landing-text', {
+            origin: 'left',
+            distance: '100px',
+            duration: 1000,
+            viewFactor: 0.5,
+        });
+
+        sr.reveal('.landing-button', {
+            origin: 'right',
+            distance: '100px',
+            duration: 1000,
+            viewFactor: 0.5,
+            delay: 750,
+        });
+    </script>
+</body>
+
+</html>
