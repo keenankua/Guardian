@@ -35,10 +35,10 @@
 
     <section id="contact">
         <div class="contact-main">
-            <div class="contact-text">Questions?
-                Concerns?
-                Feedback?
-                <span>We'd love to hear from you!</span></div>
+            <div class="contact-text"><span class="question">Questions?</span>
+                <span class="question">Concerns?</span>
+                <span class="question">Feedback?</span>
+                <span class="exclaim">We'd love to hear from you!</span></div>
             <form class="contact-form">
                 <div class="form-item">
                     <label for="name">Name</label>
@@ -58,7 +58,7 @@
     </section>
 
     <script>
-        const sr = ScrollReveal({ viewOffset: { top: 65 } });
+        const sr = ScrollReveal();
         sr.reveal('.landing-text', {
             origin: 'left',
             distance: '100px',
@@ -67,12 +67,41 @@
         });
 
         sr.reveal('.landing-button', {
-            origin: 'right',
-            distance: '100px',
             duration: 1000,
             viewFactor: 0.5,
-            delay: 750,
+            delay: 850,
         });
+
+        sr.reveal('.overview-text', {
+            duration: 1000,
+            viewFactor: 1,
+            delay: 850,
+        });
+
+        sr.reveal('.overview-img', {
+            origin: 'bottom',
+            distance: '100px',
+            duration: 1000,
+            viewFactor: 0.75,
+        });
+
+        sr.reveal('.question', {
+            origin: 'bottom',
+            distance: '100px',
+            duration: 1000,
+            viewFactor: 1,
+            interval: 750,
+        });
+
+        sr.reveal('.exclaim', {
+            origin: 'left',
+            distance: '25px',
+            duration: 1000,
+            viewFactor: 1,
+            delay: 2500,
+        });
+
+
     </script>
 </body>
 
