@@ -284,7 +284,7 @@
   white-space: pre-line;
 }
 
-#contact .contact-main .contact-text span {
+#contact .contact-main .contact-text .exclaim {
   font-family: "Anton", sans-serif;
   color: #ffffff;
 }
@@ -388,9 +388,6 @@
 @media (min-width: 1200px) {
   #contact .contact-main .contact-text {
     font-size: 2.5rem;
-  }
-  #contact .contact-main .contact-form .form-item label {
-    font-size: 1.5rem;
   }
 }
 

@@ -16,7 +16,7 @@
       color: map-get($colours, accent);
       white-space: pre-line;
 
-      span {
+      .exclaim {
         font-family: map-get($fonts, secondary);
         color: map-get($colours, primary-text);
       }
@@ -127,14 +127,6 @@
     .contact-main {
       .contact-text {
         font-size: 2.5rem;
-      }
-
-      .contact-form {
-        .form-item {
-          label {
-            font-size: 1.5rem;
-          }
-        }
       }
     }
   }
